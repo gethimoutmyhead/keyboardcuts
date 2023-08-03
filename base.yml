@@ -90,5 +90,9 @@ matches:
     replace: "standard, heel-walk, toe-walk, heel-toe walk gait normal"
 
   - trigger: "=cbdcons"
-    replace: "suitable for medicinal marijuana trial \n pt advised \n- will proceed with tga application \n- if approved, for prescription on trial basis\n- advised risk of side effects, potential benefits not guaranteed as still considered experimental therapy\nconsent form completed" 
+    replace: "suitable for medicinal marijuana trial \n pt advised \n- will proceed with tga application \n- if approved, for prescription on trial basis\n- advised risk of side effects, potential benefits not guaranteed as still considered experimental therapy\nconsent form completed\nbook for f/u at 2/52"
+
+  - trigger: "=chlamdx"
+    replace: "azithromycin 1g PO stat\nadvised result notifiable to public health\nno sex for 1/52 post treatment"
+    
 
