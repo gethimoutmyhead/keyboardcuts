@@ -94,5 +94,8 @@ matches:
 
   - trigger: "=chlamdx"
     replace: "azithromycin 1g PO stat\nadvised result notifiable to public health\nno sex for 1/52 post treatment"
+
+  - trigger: "=vgastromx"
+    replace: "liquid diet for 12-18h, then dry solid foods\navoid fresh fruit, vetables, dairy, meat, spicy food as may aggravate sx"
     
 
