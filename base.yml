@@ -68,9 +68,6 @@ matches:
   - trigger: "=addkey"
     replace: "  - trigger: \n    replace: "
 
-  - trigger: "=crt<2"
-    replace: "central + peripheral cap refill <2s"
-
   - trigger: "=elecsign"
     replace: "Signed electronically by Dr Shashi Ponraja on {{thedate}} at {{thetime}}"
     vars:
@@ -87,6 +84,11 @@ matches:
     replace: "MED 000 177 9378"
 
   - trigger: "=cap<2"
-    replace: "central + peripheral cap refill time <2s"
+    replace: "central, peripheral cap refill time <2s"
 
+  - trigger: "=gaitgud"
+    replace: "standard, heel-walk, toe-walk, heel-toe walk gait normal"
+
+  - trigger: "=cbdcons"
+    replace: "suitable for medicinal marijuana trial \n pt advised \n- will proceed with tga application \n- if approved, for prescription on trial basis\n- advised risk of side effects, potential benefits not guaranteed as still considered experimental therapy\nconsent form completed" 
 
