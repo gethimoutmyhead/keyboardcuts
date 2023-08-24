@@ -100,3 +100,9 @@ matches:
     
   - trigger: "=gudtalk"
     replace: "linear thought process, coherent articulate speech"
+    
+  - trigger: '=gudmood"
+    replace: euthymic, reactive affect, congruent with mood"
+
+  - trigger: "=noheadsx"
+    replace: "no head injury sx \n- nil dizziness/light-headedness/syncope/presyncope/LOC \n- nil headaches/nausea/vomiting/visual disturbances"
