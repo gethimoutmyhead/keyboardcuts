@@ -101,7 +101,7 @@ matches:
   - trigger: "=gudtalk"
     replace: "linear thought process, coherent articulate speech"
     
-  - trigger: '=gudmood"
+  - trigger: "=gudmood"
     replace: euthymic, reactive affect, congruent with mood"
 
   - trigger: "=noheadsx"
