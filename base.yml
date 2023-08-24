@@ -66,7 +66,7 @@ matches:
     replace: "sp ok to bb"
 
   - trigger: "=addkey"
-    replace: "  - trigger: \n    replace: "
+    replace: "  - trigger: \n  replace: "
 
   - trigger: "=elecsign"
     replace: "Signed electronically by Dr Shashi Ponraja on {{thedate}} at {{thetime}}"
@@ -98,4 +98,8 @@ matches:
   - trigger: "=vgastromx"
     replace: "liquid diet for 12-18h, then dry solid foods\navoid fresh fruit, vegetables, dairy, meat, spicy food as may aggravate sx"
     
+  - trigger: "=gudtalk"
+    replace: "linear thought process, coherent articulate speech"
 
+  - trigger: 
+    replace: 
