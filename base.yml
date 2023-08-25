@@ -106,3 +106,24 @@ matches:
 
   - trigger: "=noheadsx"
     replace: "no head injury sx \n- nil dizziness/light-headedness/syncope/presyncope/LOC \n- nil headaches/nausea/vomiting/visual disturbances"
+
+  - trigger: "=rios"
+    replace: "review if ongoing sx"
+
+  - trigger: "=nofeversx"
+    replace: "nil fevers/chills/shakes/night sweats"
+
+  - trigger: "=noresp"
+    replace: "nil resp tract sx"
+
+  - trigger: "=nocardiac"
+    replace: "nil chest pain / dyspnoea / orthopneoa / palpitations / dizziness"
+
+  - trigger: "=footpulse+"
+    replace: "palpable foot pulse"
+
+  - trigger: "=footpulse-"
+    replace: "unable to palpate foot pulse"
+
+  - trigger: "=novomit"
+    replace: "nil nausea/vomiting"
