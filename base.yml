@@ -94,44 +94,44 @@ matches:
   - trigger: "=cap<2"
     replace: "central, peripheral cap refill time <2s"
 
-  - trigger: "=gaitgud"
+  - trigger: "=gudgait"
     replace: "standard, heel-walk, toe-walk, heel-toe walk gait normal"
 
-  - trigger: "=cbdcons"
-    replace: "suitable for medicinal marijuana trial \n pt advised \n- will proceed with tga application \n- if approved, for prescription on trial basis\n- advised risk of side effects, potential benefits not guaranteed as still considered experimental therapy\nconsent form completed\nbook for f/u 2/52 after commencing rx"
-
-  - trigger: "=chlamdx"
-    replace: "azithromycin 1g PO stat\nadvised result notifiable to public health\nno sex for 1/52 post treatment"
-
-  - trigger: "=vgastromx"
-    replace: "liquid diet for 12-18h, then dry solid foods\navoid fresh fruit, vegetables, dairy, meat, spicy food as may aggravate sx"
-    
   - trigger: "=gudtalk"
     replace: "linear thought process, coherent articulate speech"
     
   - trigger: "=gudmood"
-    replace: euthymic, reactive affect, congruent with mood"
+    replace: "euthymic, reactive affect, congruent with mood"
 
-  - trigger: "=noheadsx"
-    replace: "no head injury sx \n- nil dizziness/light-headedness/syncope/presyncope/LOC \n- nil headaches/nausea/vomiting/visual disturbances"
+  - trigger: "=cbdapplied"
+    replace: "suitable for medicinal marijuana trial \n pt advised \n- will proceed with tga application \n- if approved, for prescription on trial basis\n- advised risk of side effects, potential benefits not guaranteed as still considered experimental therapy\nconsent form completed\nbook for f/u 2/52 after commencing rx"
+
+  - trigger: "=chlamrx"
+    replace: "azithromycin 1g PO stat\nadvised result notifiable to public health\nno sex for 1/52 post treatment"
+
+  - trigger: "=vgastromx"
+    replace: "liquid diet for 12-18h, then dry solid foods\navoid fresh fruit, vegetables, dairy, meat, spicy food as may aggravate sx"
 
   - trigger: "=rios"
     replace: "review if ongoing sx"
 
+  - trigger: "=nocardiosx"
+    replace: "nil chest pain / dyspnoea / orthopneoa / palpitations / dizziness"
+
   - trigger: "=nofeversx"
     replace: "nil fevers/chills/shakes/night sweats"
 
-  - trigger: "=noresp"
+  - trigger: "=noheadsx"
+    replace: "no head injury sx \n- nil dizziness/light-headedness/syncope/presyncope/LOC \n- nil headaches/nausea/vomiting/visual disturbances"
+
+  - trigger: "=norespsx"
     replace: "nil resp tract sx"
 
-  - trigger: "=nocardiac"
-    replace: "nil chest pain / dyspnoea / orthopneoa / palpitations / dizziness"
+  - trigger: "=novomitsx"
+    replace: "nil nausea/vomiting"
 
   - trigger: "=footpulse+"
     replace: "palpable foot pulse"
 
   - trigger: "=footpulse-"
     replace: "unable to palpate foot pulse"
-
-  - trigger: "=novomit"
-    replace: "nil nausea/vomiting"
