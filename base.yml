@@ -33,6 +33,14 @@ matches:
          params:
             format: "%Y%m%d"
 
+  - trigger: ":time"
+    replace: "{{mytime}}"
+    vars:
+       - name: mytime
+         type: date
+         params:
+            format: "%I%M"
+
   # Print the output of a shell command
   - trigger: ":shell"
     replace: "{{output}}"
@@ -69,7 +77,13 @@ matches:
 
   - trigger: "=phonecons"
     replace: "phone consult - confirmed full name, DOB, address"
-
+    
+  - trigger: "=phone<6cons"
+    replace: "phone consult < 6mins - confirmed full name, DOB, address"
+    
+  - trigger: "=phone>6cons"
+    replace: "phone consult < 6mins - confirmed full name, DOB, address"
+    
   - trigger: "=bbok"
     replace: "sp ok to bb"
 
@@ -91,47 +105,54 @@ matches:
   - trigger: "=ahpnum"
     replace: "MED 000 177 9378"
 
-  - trigger: "=cap<2"
+  - trigger: "=ahpsnum"
+    replace: "MED0001779378"
+
+  - trigger: "=excap<2"
     replace: "central, peripheral cap refill time <2s"
 
-  - trigger: "=gudgait"
+  - trigger: "=exgudgait"
     replace: "standard, heel-walk, toe-walk, heel-toe walk gait normal"
 
-  - trigger: "=gudtalk"
+  - trigger: "=exgudtalk"
     replace: "linear thought process, coherent articulate speech"
     
-  - trigger: "=gudmood"
+  - trigger: "=exgudmood"
     replace: "euthymic, reactive affect, congruent with mood"
 
   - trigger: "=cbdapplied"
     replace: "suitable for medicinal marijuana trial \n pt advised \n- will proceed with tga application \n- if approved, for prescription on trial basis\n- advised risk of side effects, potential benefits not guaranteed as still considered experimental therapy\nconsent form completed\nbook for f/u 2/52 after commencing rx"
 
-  - trigger: "=chlamrx"
+  - trigger: "=mxchlamydia"
     replace: "azithromycin 1g PO stat\nadvised result notifiable to public health\nno sex for 1/52 post treatment"
 
-  - trigger: "=vgastromx"
+  - trigger: "=mxvgastro"
     replace: "liquid diet for 12-18h, then dry solid foods\navoid fresh fruit, vegetables, dairy, meat, spicy food as may aggravate sx"
 
   - trigger: "=rios"
     replace: "review if ongoing sx"
 
-  - trigger: "=nocardiosx"
+  - trigger: "=sxnocardio"
     replace: "nil chest pain / dyspnoea / orthopneoa / palpitations / dizziness"
 
-  - trigger: "=nofeversx"
+  - trigger: "=sxnofever"
     replace: "nil fevers/chills/shakes/night sweats"
 
-  - trigger: "=noheadsx"
+  - trigger: "=sxnohead"
     replace: "no head injury sx \n- nil dizziness/light-headedness/syncope/presyncope/LOC \n- nil headaches/nausea/vomiting/visual disturbances"
 
-  - trigger: "=norespsx"
+  - trigger: "=sxnoresp"
     replace: "nil resp tract sx"
 
-  - trigger: "=novomitsx"
+  - trigger: "=sxnovomit"
     replace: "nil nausea/vomiting"
 
-  - trigger: "=footpulse+"
+  - trigger: "=exfootpulse+"
     replace: "palpable foot pulse"
 
-  - trigger: "=footpulse-"
+  - trigger: "=exfootpulse-"
     replace: "unable to palpate foot pulse"
+
+  - trigger: "=exnowob"
+    replace: "nil increased work of breathing"
+    
