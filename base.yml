@@ -130,7 +130,7 @@ matches:
     replace: "liquid diet for 12-18h, then dry solid foods\navoid fresh fruit, vegetables, dairy, meat, spicy food as may aggravate sx"
 
   - trigger: "mxivironse"
-    replace: "discussed risks with iron infusion/n- common side effects - nausea, vomiting, metallic taste in mouth, flu-like illness for 24-48h/n- adverse effects - venepuncture site bleeding, infection, allergic reaction/n- complications - anaphylaxis, extravasation staining"
+    replace: "discussed risks with iron infusion\n- common side effects - nausea, vomiting, metallic taste in mouth, flu-like illness for 24-48h\n- adverse effects - venepuncture site bleeding, infection, allergic reaction\n- complications - anaphylaxis, extravasation staining"
 
   - trigger: "=rios"
     replace: "review if ongoing sx"
