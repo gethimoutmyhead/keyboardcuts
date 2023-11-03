@@ -85,7 +85,10 @@ matches:
     replace: "phone consult < 6mins - confirmed full name, DOB, address"
     
   - trigger: "=bbok"
-    replace: "sp ok to bb"
+    replace: "sp ok to bb this appt"
+
+  - trigger: "=bbhcw"
+    replace: "hcw sp ok to bb"
 
   - trigger: "=addkey"
     replace: "  - trigger: \n  replace: "
@@ -102,12 +105,15 @@ matches:
         params:
           format: "%I:%M %p"
 
-  - trigger: "=ahpnum"
+  - trigger: "=ahpnum1"
     replace: "MED 000 177 9378"
 
-  - trigger: "=ahpsnum"
+  - trigger: "=ahpnum2"
     replace: "MED0001779378"
 
+  - trigger: "=ahpnum3"
+    replace: "0001779378"
+    
   - trigger: "=excap<2"
     replace: "central, peripheral cap refill time <2s"
 
@@ -116,6 +122,9 @@ matches:
 
   - trigger: "=exgudtalk"
     replace: "linear thought process, coherent articulate speech"
+
+  - trigger: "=exgudchest"
+    replace: "chest clear, hsdna"
     
   - trigger: "=exgudmood"
     replace: "euthymic, reactive affect, congruent with mood"
