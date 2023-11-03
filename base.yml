@@ -131,7 +131,10 @@ matches:
 
   - trigger: "mxivironse"
     replace: "discussed risks with iron infusion\n- common side effects - nausea, vomiting, metallic taste in mouth, flu-like illness for 24-48h\n- adverse effects - venepuncture site bleeding, infection, allergic reaction\n- complications - anaphylaxis, extravasation staining"
-
+  
+  - trigger: "mxstdscreen"
+    replace: "-> std screen as below \n- advised of window periods for screening (CT/NG - 4/52, BBI - 12/52) \n- recommended f/u at 1/52 for results, repeat screen at 3/12\n- advised some results are notifiable to public health"
+    
   - trigger: "=rios"
     replace: "review if ongoing sx"
 
