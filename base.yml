@@ -76,13 +76,16 @@ matches:
     replace: "results discussed" 
 
   - trigger: "=phonecons"
-    replace: "phone consult - confirmed full name, DOB, address"
+    replace: "phone consult -patient identity confirmed (full name, DOB, current address)"
     
   - trigger: "=phone<6cons"
-    replace: "phone consult < 6mins - confirmed full name, DOB, address"
+    replace: "phone consult < 6mins - patient identity confirmed (full name, DOB, current address)"
     
   - trigger: "=phone>6cons"
-    replace: "phone consult < 6mins - confirmed full name, DOB, address"
+    replace: "phone consult < 6mins - patient identity confirmed (full name, DOB, current address)"
+
+  - trigger: "=bbvc"
+    replace: "pt verbally consented to full medicare rebate being assigned to practitoner via clinic (ie bulk-bill)"
     
   - trigger: "=bbok"
     replace: "sp ok to bb this appt"
