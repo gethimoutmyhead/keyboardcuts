@@ -147,9 +147,15 @@ matches:
   - trigger: "mxstdscreen"
     replace: "-> std screen as below \n- advised of window periods for screening (CT/NG - 4/52, BBI - 12/52) \n- recommended f/u at 1/52 for results, repeat screen at 3/12\n- advised some results are notifiable to public health"
     
-  - trigger: "=rios"
+  - trigger: "=mxrios"
     replace: "review if ongoing sx"
 
+  - trigger: "=mxixfu"
+    replace: "pt to book f/u once results available"
+
+  - trigger: "=mxdoix"
+    replace: "arrange ix as below"
+  
   - trigger: "=sxnocardio"
     replace: "nil chest pain / dyspnoea / orthopneoa / palpitations / dizziness"
 
