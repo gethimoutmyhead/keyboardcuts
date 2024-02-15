@@ -137,7 +137,10 @@ matches:
 
   - trigger: "=mxchlamydia"
     replace: "azithromycin 1g PO stat\nadvised result notifiable to public health\nno sex for 1/52 post treatment"
-
+    
+  - trigger: "=mxnsgdo"
+    replace: "administered by nsg under medical supervision w/ thanks"
+ 
   - trigger: "=mxvgastro"
     replace: "liquid diet for 12-18h, then dry solid foods\navoid fresh fruit, vegetables, dairy, meat, spicy food as may aggravate sx"
 
